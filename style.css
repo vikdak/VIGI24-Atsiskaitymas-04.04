@@ -1,0 +1,109 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  max-width: 600px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+nav img {
+  height: 1.5rem;
+}
+
+.NFT1 {
+  display: grid;
+  grid-template-columns: 180px auto;
+}
+.NFT1 .text {
+  max-width: 170px;
+  padding: 1rem 0 1rem 1rem;
+}
+
+h6 {
+  color: #ff3998;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.7rem;
+  color: #777777;
+}
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: white;
+  border-color: #ff3998;
+}
+.NFT1 .graphic img {
+  width: 10rem;
+}
+.NFT2 {
+  background-image: url(./assets/assets/background.svg);
+  padding: 2rem 1rem 1rem 1rem;
+}
+.NFT2 p {
+  color: #111111;
+}
+.companies {
+  padding: 1rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+.companies img {
+  max-width: 100%;
+  min-height: 3rem;
+}
+.NFT3 {
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 1rem;
+  width: 10rem;
+  border-radius: 9999px;
+}
+
+.bid,
+.color,
+.day {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 0.1rem;
+}
+.bottom {
+  padding: 0.5rem;
+  background-color: #eeeeee;
+}
+h9 {
+  color: #ff8139;
+  font-size: 0.5rem;
+}
+h10 {
+  color: #999999;
+  font-size: 0.5rem;
+}
+h8 {
+  color: #999999;
+  font-size: 0.6rem;
+}
+h7 {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  align-self: center;
+}
+
+.icon img {
+  max-height: 40px;
+}
