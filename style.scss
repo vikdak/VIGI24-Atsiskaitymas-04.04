@@ -95,7 +95,7 @@ button {
 }
 .bottom {
   padding: 0.5rem;
-  background-color: $light2;
+  background-color: $light1;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
 }
@@ -172,10 +172,10 @@ footer {
     }
   }
   .cards {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid $light2;
   }
   footer {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid $light2;
     display: grid;
     grid-template-columns: auto auto;
     .footerbottom {
