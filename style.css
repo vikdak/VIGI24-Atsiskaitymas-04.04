@@ -6,7 +6,16 @@ body {
   nav a {
     display: none;
   }
+  p {
+    font-size: 0.7rem;
+  }
   #opendoor {
+    display: none;
+  }
+  span {
+    display: none;
+  }
+  #launching {
     display: none;
   }
 }
@@ -23,6 +32,14 @@ nav {
 
 nav img {
   height: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+p {
+  color: #777777;
+  padding-bottom: 1rem;
 }
 
 .block-1 {
@@ -36,18 +53,22 @@ nav img {
   padding: 1rem 0 1rem 1rem;
 }
 
+.block-1 .graphic {
+  display: -ms-grid;
+  display: grid;
+}
+
 .block-1 .graphic img {
   height: 17rem;
+}
+
+.block-1 .graphic #upsell-footer {
+  height: 70%;
 }
 
 h6 {
   color: #ff3998;
   font-weight: bold;
-}
-
-p {
-  font-size: 0.7rem;
-  color: #777777;
 }
 
 button {
@@ -99,6 +120,7 @@ button {
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
   padding-bottom: 3rem;
+  border-bottom: 1px solid #cccccc;
 }
 
 .bid,
@@ -116,7 +138,7 @@ button {
 
 .bottom {
   padding: 0.5rem;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
 }
@@ -150,6 +172,7 @@ h7 {
 
 footer {
   padding: 2rem 1rem;
+  border-top: 1px solid #cccccc;
 }
 
 footer .footerbottom {
@@ -170,10 +193,6 @@ footer .footerbottom h6 {
   color: #777777;
 }
 
-footer #launching {
-  display: none;
-}
-
 @media only screen and (min-width: 600px) {
   body {
     margin: 2rem;
@@ -188,7 +207,25 @@ footer #launching {
   }
   nav a p1 {
     color: #ff3998;
-    font-size: 00.7rem;
+  }
+  .block-1 {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    height: 500px;
+  }
+  .block-1 h1 {
+    font-size: 4rem;
+  }
+  .block-1 .graphic {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .block-1 .graphic img {
+    height: 70%;
+  }
+  .block-1 .graphic #upsell-footer {
+    height: 100%;
   }
   .block-2 {
     padding: 3rem;
@@ -201,22 +238,21 @@ footer #launching {
     max-width: 10rem;
     padding: 3rem;
   }
-  .cards {
-    border-bottom: 1px solid #cccccc;
-  }
   footer {
-    border-top: 1px solid #cccccc;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
+  }
+  footer .footertop p {
+    padding-bottom: 0;
   }
   footer .footerbottom {
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
     max-width: 100%;
   }
-  footer #launching {
+  footer .footerbottom #launching {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: right;
