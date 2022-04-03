@@ -1,0 +1,190 @@
+@import "colors";
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a {
+    display: none;
+  }
+  #opendoor {
+    display: none;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  img {
+    height: 1.5rem;
+  }
+}
+
+.block-1 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  .text {
+    padding: 1rem 0 1rem 1rem;
+  }
+  .graphic img {
+    height: 17rem;
+  }
+}
+
+h6 {
+  color: $pink;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.7rem;
+  color: $dark3;
+}
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: $light1;
+  border-color: $pink;
+}
+
+.block-2 {
+  background-image: url(./assets/assets/background.svg);
+  background-size: cover;
+  padding: 2rem 1rem 1rem 1rem;
+  p {
+    color: $dark1;
+  }
+}
+
+.companies {
+  padding: 1rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  img {
+    max-width: 100%;
+    min-height: 3rem;
+  }
+}
+
+.block-3 {
+  padding: 1rem;
+  padding-bottom: 3rem;
+  p {
+    padding-bottom: 1rem;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.bid,
+.color,
+.day {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 0.1rem;
+}
+.bottom {
+  padding: 0.5rem;
+  background-color: $light1;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+h9 {
+  color: $orange;
+  font-size: 0.5rem;
+}
+h10 {
+  color: $dark4;
+  font-size: 0.5rem;
+}
+h8 {
+  color: $dark4;
+  font-size: 0.6rem;
+}
+h7 {
+  font-size: 0.8rem;
+  font-weight: bolder;
+  align-self: center;
+}
+
+.icon img {
+  max-height: 20px;
+}
+footer {
+  padding: 2rem 1rem;
+  .footerbottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 2rem;
+    li {
+      list-style-type: none;
+      font-size: 0.7rem;
+      color: $dark3;
+    }
+    h6 {
+      color: $dark3;
+    }
+  }
+  #launching {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 2rem;
+  }
+  nav {
+    .meniu {
+      display: none;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 1rem;
+      p1 {
+        color: $pink;
+        font-size: 00.7rem;
+      }
+    }
+  }
+
+  .block-2 {
+    padding: 3rem;
+  }
+
+  .companies {
+    grid-template-columns: auto auto auto auto auto;
+    img {
+      max-width: 10rem;
+      padding: 3rem;
+    }
+  }
+  .cards {
+    border-bottom: 1px solid $light2;
+  }
+  footer {
+    border-top: 1px solid $light2;
+    display: grid;
+    grid-template-columns: auto auto;
+    .footerbottom {
+      grid-template-columns: auto auto auto auto;
+      max-width: 100%;
+    }
+    #launching {
+      display: grid;
+      justify-content: right;
+    }
+  }
+}
