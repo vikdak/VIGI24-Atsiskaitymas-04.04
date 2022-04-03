@@ -1,3 +1,5 @@
+@import "colors";
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -32,19 +34,19 @@ nav {
 }
 
 h6 {
-  color: #ff3998;
+  color: $pink;
   font-weight: bold;
 }
 
 p {
   font-size: 0.7rem;
-  color: #777777;
+  color: $dark3;
 }
 button {
   padding: 0.5rem 1rem;
   border-radius: 9999px;
-  background-color: white;
-  border-color: #ff3998;
+  background-color: $light1;
+  border-color: $pink;
 }
 
 .block-2 {
@@ -52,7 +54,7 @@ button {
   background-size: cover;
   padding: 2rem 1rem 1rem 1rem;
   p {
-    color: #111111;
+    color: $dark1;
   }
 }
 
@@ -93,21 +95,21 @@ button {
 }
 .bottom {
   padding: 0.5rem;
-  background-color: #eeeeee;
+  background-color: $light2;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
 }
 
 h9 {
-  color: #ff8139;
+  color: $orange;
   font-size: 0.5rem;
 }
 h10 {
-  color: #999999;
+  color: $dark4;
   font-size: 0.5rem;
 }
 h8 {
-  color: #999999;
+  color: $dark4;
   font-size: 0.6rem;
 }
 h7 {
@@ -128,10 +130,10 @@ footer {
     li {
       list-style-type: none;
       font-size: 0.7rem;
-      color: #777777;
+      color: $dark3;
     }
     h6 {
-      color: #777777;
+      color: $dark3;
     }
   }
   #launching {
@@ -152,7 +154,7 @@ footer {
       text-decoration: none;
       padding: 1rem;
       p1 {
-        color: #ff3998;
+        color: $pink;
         font-size: 00.7rem;
       }
     }
