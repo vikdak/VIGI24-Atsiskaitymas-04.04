@@ -8,7 +8,13 @@ body {
   nav a {
     display: none;
   }
+  p {
+    font-size: 0.7rem;
+  }
   #opendoor {
+    display: none;
+  }
+  span {
     display: none;
   }
 }
@@ -19,7 +25,13 @@ nav {
   margin: 1rem;
   img {
     height: 1.5rem;
+    align-self: center;
   }
+}
+
+p {
+  color: $dark3;
+  padding-bottom: 1rem;
 }
 
 .block-1 {
@@ -28,8 +40,14 @@ nav {
   .text {
     padding: 1rem 0 1rem 1rem;
   }
-  .graphic img {
-    height: 17rem;
+  .graphic {
+    display: grid;
+    img {
+      height: 17rem;
+    }
+    // img #upsell-footer {
+    //   height: ;
+    // }
   }
 }
 
@@ -38,10 +56,6 @@ h6 {
   font-weight: bold;
 }
 
-p {
-  font-size: 0.7rem;
-  color: $dark3;
-}
 button {
   padding: 0.5rem 1rem;
   border-radius: 9999px;
@@ -83,6 +97,7 @@ button {
   grid-template-columns: auto auto auto auto;
   column-gap: 1rem;
   padding-bottom: 3rem;
+  border-bottom: 1px solid $light2;
 }
 
 .bid,
@@ -95,7 +110,7 @@ button {
 }
 .bottom {
   padding: 0.5rem;
-  background-color: $light1;
+  background-color: $light3;
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
 }
@@ -123,6 +138,7 @@ h7 {
 }
 footer {
   padding: 2rem 1rem;
+  border-top: 1px solid $light2;
   .footerbottom {
     display: grid;
     grid-template-columns: auto auto;
@@ -135,9 +151,9 @@ footer {
     h6 {
       color: $dark3;
     }
-  }
-  #launching {
-    display: none;
+    #launching {
+      display: none;
+    }
   }
 }
 
@@ -155,11 +171,25 @@ footer {
       padding: 1rem;
       p1 {
         color: $pink;
-        font-size: 00.7rem;
       }
     }
   }
 
+  .block-1 {
+    max-height: fit-content;
+    h1 {
+      font-size: 4rem;
+    }
+    .graphic {
+      justify-content: center;
+      img {
+        height: 35rem;
+      }
+      img #upsell-footer {
+        max-height: fit-content;
+      }
+    }
+  }
   .block-2 {
     padding: 3rem;
   }
@@ -171,13 +201,13 @@ footer {
       padding: 3rem;
     }
   }
-  .cards {
-    border-bottom: 1px solid $light2;
-  }
+
   footer {
-    border-top: 1px solid $light2;
     display: grid;
     grid-template-columns: auto auto;
+    .footertop p {
+      padding-bottom: 0;
+    }
     .footerbottom {
       grid-template-columns: auto auto auto auto;
       max-width: 100%;
