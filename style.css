@@ -2,13 +2,22 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-  max-width: 600px;
+@media only screen and (max-width: 600px) {
+  nav a {
+    display: none;
+  }
+  #opendoor {
+    display: none;
+  }
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 1rem;
 }
 
@@ -16,13 +25,19 @@ nav img {
   height: 1.5rem;
 }
 
-.NFT1 {
+.block-1 {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 180px auto;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
 }
-.NFT1 .text {
-  max-width: 170px;
+
+.block-1 .text {
   padding: 1rem 0 1rem 1rem;
+}
+
+.block-1 .graphic img {
+  height: 17rem;
 }
 
 h6 {
@@ -34,76 +49,179 @@ p {
   font-size: 0.7rem;
   color: #777777;
 }
+
 button {
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   background-color: white;
   border-color: #ff3998;
 }
-.NFT1 .graphic img {
-  width: 10rem;
-}
-.NFT2 {
+
+.block-2 {
   background-image: url(./assets/assets/background.svg);
+  background-size: cover;
   padding: 2rem 1rem 1rem 1rem;
 }
-.NFT2 p {
+
+.block-2 p {
   color: #111111;
 }
+
 .companies {
   padding: 1rem;
   max-width: 100%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   grid-gap: 1rem;
 }
+
 .companies img {
   max-width: 100%;
   min-height: 3rem;
 }
-.NFT3 {
+
+.block-3 {
   padding: 1rem;
   padding-bottom: 3rem;
 }
 
+.block-3 p {
+  padding-bottom: 1rem;
+}
+
 .cards {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 1rem;
-  width: 10rem;
-  border-radius: 9999px;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  padding-bottom: 3rem;
 }
 
 .bid,
 .color,
 .day {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0.1rem;
 }
+
 .bottom {
   padding: 0.5rem;
   background-color: #eeeeee;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
+
 h9 {
   color: #ff8139;
   font-size: 0.5rem;
 }
+
 h10 {
   color: #999999;
   font-size: 0.5rem;
 }
+
 h8 {
   color: #999999;
   font-size: 0.6rem;
 }
+
 h7 {
   font-size: 0.8rem;
   font-weight: bolder;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .icon img {
-  max-height: 40px;
+  max-height: 20px;
 }
+
+footer {
+  padding: 2rem 1rem;
+}
+
+footer .footerbottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding-bottom: 2rem;
+}
+
+footer .footerbottom li {
+  list-style-type: none;
+  font-size: 0.7rem;
+  color: #777777;
+}
+
+footer .footerbottom h6 {
+  color: #777777;
+}
+
+footer #launching {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 2rem;
+  }
+  nav .meniu {
+    display: none;
+  }
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  nav a p1 {
+    color: #ff3998;
+    font-size: 00.7rem;
+  }
+  .block-2 {
+    padding: 3rem;
+  }
+  .companies {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .companies img {
+    max-width: 10rem;
+    padding: 3rem;
+  }
+  .cards {
+    border-bottom: 1px solid #cccccc;
+  }
+  footer {
+    border-top: 1px solid #cccccc;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  footer .footerbottom {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    max-width: 100%;
+  }
+  footer #launching {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+}
+/*# sourceMappingURL=style.css.map */
